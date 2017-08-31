@@ -1,11 +1,13 @@
 package com.example.demo.bookmarks;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+@Entity
 public class Bookmark {
 
   @JsonIgnore

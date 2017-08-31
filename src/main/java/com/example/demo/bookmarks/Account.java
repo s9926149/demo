@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Account {
 
-  @OneToMany(mappedBy = "Account")
+  @OneToMany(mappedBy = "account")
   private Set<Bookmark> bookmarks = new HashSet<>();
 
   @Id
